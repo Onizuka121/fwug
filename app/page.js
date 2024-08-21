@@ -69,7 +69,7 @@ export default function Home() {
                 <img
                   alt="#_"
                   className="relative  w-full rounded-2xl drop-shadow-2xl"
-                  src="images/image2.jpg"
+                  src="images/image20.jpg"
                 />
               </div>
             </div>
@@ -140,7 +140,7 @@ export default function Home() {
           </svg>
         </div>
       </div>
-      <Carousel />
+      {/*<Carousel />*/}
 
       <Section2 />
       <SectionPump />
