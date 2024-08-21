@@ -10,6 +10,10 @@
 
 }
 
+.custom-col-border{
+  border:#F8E197;
+}
+
 .image-container {
   position: relative;
   width: 100%;

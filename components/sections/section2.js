@@ -30,21 +30,21 @@ export default function Section2() {
               </div>
               <div className="p-2 overflow-hidden border border-[#F8E197] rounded-3xl">
                 <img
-                  src="images/image17.jpg"
+                  src="images/image14.jpg"
                   alt="#_"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
               </div>
               <div className="p-2 overflow-hidden border border-[#F8E197] rounded-3xl">
                 <img
-                  src="images/image16.jpg"
+                  src="images/image26.jpg"
                   alt="#_"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
               </div>
               <div className="p-2 overflow-hidden border border-[#F8E197] rounded-3xl">
                 <img
-                  src="images/image6.jpg"
+                  src="images/image29.jpg"
                   alt="#_"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
