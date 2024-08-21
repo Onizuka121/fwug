@@ -10,31 +10,7 @@ import Carousel from "@/components/carousel";
 
 
 export default function Home() {
-  useEffect(() => {
-    const elements = document.querySelectorAll(".animate-on-scroll");
-
-    const handleScroll = () => {
-      elements.forEach((element) => {
-        const rect = element.getBoundingClientRect();
-        if (
-          rect.top <= window.innerHeight &&
-          rect.bottom >= 0 &&
-          !element.classList.contains("animate-done")
-        ) {
-          element.classList.remove("hidden");
-          element.classList.add("animate-fadeInUp", "animate-done");
-        }
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+ 
 
   return (
     <>
