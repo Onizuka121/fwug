@@ -1,12 +1,8 @@
 "use client";
-import { useEffect } from "react";
 import "flowbite";
 import ImageCarousel from "./image-carousel";
 
 export default function Carousel() {
-  useEffect(() => {
-    const flowbite = require("flowbite");
-  }, []);
 
   return (
     <div className="xl:w-1/2 w-4/5 mx-auto mt-20">
@@ -30,9 +26,7 @@ export default function Carousel() {
           
         </div>
 
-        {/* Slider indicators */}
         
-        {/* Slider controls */}
         <button
           type="button"
           className="flex absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 hover:backdrop-blur-xl hover:border-2 border-[#F8E197]  rounded-full  focus:outline-none transition"
