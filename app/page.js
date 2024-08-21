@@ -1,10 +1,13 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 import "@/app/globals.css";
 import Section2 from "@/components/sections/section2";
 import SectionPump from "@/components/sections/section-pump";
 import SectionTelegram from "@/components/sections/section-tg";
+import Carousel from "@/components/carousel";
+
+
 
 export default function Home() {
   useEffect(() => {
@@ -61,7 +64,6 @@ export default function Home() {
               </p>
 
               <div className="flex animate-on-scroll flex-col items-center gap-3 mt-10 md:flex-row">
-               
                 <Link
                   href={`https://pump.fun/5ENMsAru7reMkWJJd78cGThBtjVVKVbWJBhabrA8pump`}
                   className="flex group items-center chakra-petch-semibold justify-center shadow-xl w-full h-10 p-5 text-xl transition duration-30  hover:ring-1  hover:ring-[#F8E197] border border-[#F8E197] backdrop-blur-3xl rounded-lg md:w-auto md:font-semibold"
@@ -99,8 +101,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="m-auto  justify-center w-64 animate-bounce">
-        <div className="flex justify-center col-span-1 px-8">
+
+      
+      <div className="m-auto animate-bounce justify-center w-64 shakeY-special">
+        <div className="flex justify-center col-span-1 px-8 animate-bounce">
           <svg
             width="646"
             height="96"
@@ -161,9 +165,11 @@ export default function Home() {
           </svg>
         </div>
       </div>
+      <Carousel />
+
       <Section2 />
-      <SectionPump/>
-      <SectionTelegram/>
+      <SectionPump />
+      <SectionTelegram />
     </>
   );
 }

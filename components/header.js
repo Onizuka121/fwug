@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-1/2  transform -translate-x-1/2 xl:w-2/3 w-4/5 mt-2  clearNav z-50 justify-center backdrop-blur-xl items-center border-b border-[#F8E197] p-2  ${
+        className={`fixed top-0 left-1/2  transform -translate-x-1/2 xl:w-2/3 w-4/5 mt-2  clearNav z-50 justify-center backdrop-blur-xl items-center border-2 border-[#F8E197] p-3  ${
           navOpen ? "rounded-3xl" : "rounded-full"
         }`}
       >
@@ -18,7 +18,7 @@ export default function Header() {
           className="flex w-full px-8 mx-auto md:px-12 md:items-center md:justify-between flex-row lg:px-32 max-w-7xl"
         >
           <img
-            src="images/icon.jpg"
+            src="images/image21.jpg"
             alt="#_"
             className="w-10 h-10 mx-auto rounded-full "
           />
