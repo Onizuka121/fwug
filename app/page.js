@@ -5,6 +5,7 @@ import Section2 from "@/components/sections/section2";
 import SectionPump from "@/components/sections/section-pump";
 import SectionTelegram from "@/components/sections/section-tg";
 import Carousel from "@/components/carousel";
+import ImageSwitcher from "@/components/image-switcher";
 
 
 
@@ -64,15 +65,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
-              <div className="h-full p-2 shakeY overflow-hidden shadow-lg border border-[#F8E197] rounded-3xl">
-                <img
-                  alt="#_"
-                  className="relative  w-full rounded-2xl drop-shadow-2xl"
-                  src="images/image20.jpg"
-                />
-              </div>
-            </div>
+           <ImageSwitcher/>
           </div>
         </div>
       </section>
@@ -140,7 +133,7 @@ export default function Home() {
           </svg>
         </div>
       </div>
-      {/*<Carousel />*/}
+      <Carousel />
 
       <Section2 />
       <SectionPump />

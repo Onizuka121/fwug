@@ -1,16 +1,9 @@
-export default function ImageCarousel({image_url}) {
-    return (
-        <>
-        <div
-            className="hidden duration-700 ease-in-out"
-            data-carousel-item=""
-          >
-            <img
-              src={`images/${image_url}`}
-              className="object-cover w-full h-full"
-              alt={image_url}
-            />
-          </div>
-        </>
-    )
-}
+const ImageCarousel = ({ image_url }) => {
+  return (
+    <div className="carousel-item h-[400px] md:h-[800px]">
+      <img src={`/images/${image_url}`} alt={image_url} className="carousel-image object-cover h-full" />
+    </div>
+  );
+};
+
+export default ImageCarousel;

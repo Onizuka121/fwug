@@ -1,37 +1,42 @@
-import ImageCarousel from "./image-carousel";
+import { useState } from 'react';
+import ImageCarousel from './image-carousel';
 
- 
+const images = [
+  "image18.jpg",
+  "image11.jpg",
+  "image12.jpg",
+  "image13.jpg",
+  "image14.jpg",
+  "image19.jpg",
+  "image10.jpg",
+  "image20.jpg",
+  "image26.jpg",
+  "image24.jpg"
+];
 
-export default function Carousel() {
-  
-  
+const Carousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
   return (
-    <div className="xl:w-1/2 w-4/5 mx-auto mt-20">
-      <div
-        id="default-carousel"
-        className="relative rounded-3xl overflow-hidden shadow-lg"
-        data-carousel="static"
-      >
-        <div className="relative h-[400px] md:h-[800px]" data-carousel-inner="">
-          <ImageCarousel image_url="image18.jpg" />
-          <ImageCarousel image_url="image11.jpg" />
-          <ImageCarousel image_url="image12.jpg" />
-          <ImageCarousel image_url="image13.jpg" />
-          <ImageCarousel image_url="image14.jpg" />
-          <ImageCarousel image_url="image19.jpg" />
-          <ImageCarousel image_url="image10.jpg" />
-          <ImageCarousel image_url="image20.jpg" />
-          <ImageCarousel image_url="image26.jpg" />
-          <ImageCarousel image_url="image24.jpg" />
-
-          
-        </div>
-
-        
-        <button
+    <div className="carousel-container rounded-3xl shadow-lg xl:w-1/2 w-4/5 mx-auto mt-20">
+      <div className="carousel-wrapper rounded-3xl " style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        {images.map((image, index) => (
+          <ImageCarousel key={index} image_url={image} />
+        ))}
+      </div>
+      <button
           type="button"
           className="flex absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 hover:backdrop-blur-xl hover:border-2 border-[#F8E197]  rounded-full  focus:outline-none transition"
           data-carousel-prev=""
+          onClick={prevSlide}
         >
           <svg
             className="w-5 h-5 text-[#F8E197]"
@@ -52,6 +57,7 @@ export default function Carousel() {
           type="button"
           className="flex absolute top-1/2 right-3 z-40 duration-150 items-center justify-center w-10 h-10 hover:backdrop-blur-xl hover:border-2 border-[#F8E197] rounded-full focus:outline-none transition"
           data-carousel-next=""
+          onClick={nextSlide}
         >
           <svg
             className="w-5 h-5 text-[#F8E197]"
@@ -68,7 +74,9 @@ export default function Carousel() {
             />
           </svg>
         </button>
-      </div>
+     
     </div>
   );
-}
+};
+
+export default Carousel;
