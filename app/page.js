@@ -1,5 +1,4 @@
 "use client";
-import { useEffect } from "react";
 import Link from "next/link";
 import "@/app/globals.css";
 import Section2 from "@/components/sections/section2";
