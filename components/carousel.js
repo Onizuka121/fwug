@@ -1,27 +1,9 @@
 import ImageCarousel from "./image-carousel";
-import { useEffect } from "react";
 
  
 
 export default function Carousel() {
-  useEffect(() => {
-    const initializeCarousel = async () => {
-      try {
-        const module = await import('flowbite');
-        const flowbite = module.default;
-
-        // Supponiamo che flowbite abbia un metodo per inizializzare i carousel
-        const carouselElement = document.getElementById('carousel');
-        if (carouselElement) {
-          flowbite.initCarousel(carouselElement); // Modifica secondo la documentazione di flowbite
-        }
-      } catch (error) {
-        console.error('Errore durante l\'importazione di flowbite:', error);
-      }
-    };
-
-    initializeCarousel();
-  }, []);
+  
   
   return (
     <div className="xl:w-1/2 w-4/5 mx-auto mt-20">
