@@ -49,7 +49,7 @@ export default function Form() {
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full bg-transparent px-3 py-2 placeholder:text-white/50 md:max-w-[18rem] border border-[#F8E197] backdrop-blur-3xl shadow-xl rounded-lg md:w-auto md:font-semibold"
+          className="w-full bg-transparent px-3 py-2 placeholder:text-white/50 md:max-w-[18rem] border border-[#F8E197] backdrop-blur-3xl shadow-xl rounded-lg md:w-auto md:font-semibold text-[#F8E197]"
           required
           disabled={isLoading}
         />
