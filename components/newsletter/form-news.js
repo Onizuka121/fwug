@@ -2,7 +2,7 @@ import Form from "./form";
 
 export default function FormNewsLetter() {
   return (
-    <div className="max-w-screen-lg shadow-xl backdrop-blur-3xl rounded-3xl border border-[#F8E197] px-3 xl:m-0 mx-auto py-10">
+    <div className="px-4 py-6 mx-auto lg:px-12 xl:px-24 max-w-7xl mt-10 border border-[#F8E197] rounded-2xl">
       <div className="grid gap-5 md:grid-cols-2 md:gap-10 lg:gap-20">
         <div className="flex justify-center md:justify-end">
           <img
