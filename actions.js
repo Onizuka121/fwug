@@ -15,4 +15,5 @@ export async function sendMail(email) {
     const result = await response.json()
   
     return result;
+    
 }
