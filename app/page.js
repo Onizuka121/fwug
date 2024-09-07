@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
-import "@/app/globals.css";
-import Section2 from "@/components/sections/section2";
-import SectionPump from "@/components/sections/section-pump";
-import SectionTelegram from "@/components/sections/section-tg";
-import Carousel from "@/components/carousel";
-import ImageSwitcher from "@/components/image-switcher";
-import TimeLine from "@/components/time-line";
+import '../app/globals.css'
+import Section2 from "../components/sections/section2"
+import SectionPump from "../components/sections/section-pump";
+import SectionTelegram from "../components/sections/section-tg";
+import Carousel from "../components/carousel";
+import ImageSwitcher from "../components/image-switcher";
+import TimeLine from "../components/time-line";
+import FormNewsLetter from "../components/newsletter/form-news";
 
 
 
@@ -264,6 +265,7 @@ export default function Home() {
       </div>
       <SectionPump />
       <SectionTelegram />
+      <FormNewsLetter/>
     </>
   );
 }

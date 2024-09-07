@@ -29,11 +29,11 @@ export default function Header() {
             $FWUG
           </Link>
 
-          <div className="flex flex-row items-center ml-20 justify-between text-white">
+          <div className="flex flex-row items-center ml-14 justify-between text-white">
             <button
               className={`menu-icon ${
                 navOpen ? "open" : ""
-              } rounded-lg md:hidden focus:outline-none focus:shadow-outline`}
+              } rounded-lg md:hidden focus:outline-none focus:shadow-outline `}
               onClick={() => setNavOpen(!navOpen)}
             >
               <span className="line line1"></span>

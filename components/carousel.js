@@ -11,7 +11,10 @@ const images = [
   "image10.jpg",
   "image20.jpg",
   "image26.jpg",
-  "image24.jpg"
+  "image24.jpg",
+  "image25.jpg",
+  "image26.jpg",
+  "image27.jpg"
 ];
 
 const Carousel = () => {

@@ -1,6 +1,7 @@
-import Header from "@/components/header";
+import Header from "../components/header";
 import "./globals.css";
-import Footer from "@/components/footer";
+import Footer from "../components/footer";
+
 
 export const metadata = {
   title: "FWUG",

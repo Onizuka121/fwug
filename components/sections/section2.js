@@ -23,7 +23,7 @@ export default function Section2() {
               <div className="flex flex-col gap-4 mt-12 list-none text-pretty">
               <div className="p-2 overflow-hidden border border-[#F8E197] rounded-3xl">
                 <img
-                  src="images/image5.jpg"
+                  src="images/image30.jpg"
                   alt="#_"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
@@ -37,21 +37,21 @@ export default function Section2() {
               </div>
               <div className="p-2 overflow-hidden border border-[#F8E197] rounded-3xl">
                 <img
-                  src="images/image26.jpg"
+                  src="images/image35.jpg"
                   alt="#_"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
               </div>
               <div className="p-2 overflow-hidden border border-[#F8E197] rounded-3xl">
                 <img
-                  src="images/image29.jpg"
+                  src="images/image34.jpg"
                   alt="#_"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
               </div>
               <div className="p-2 overflow-hidden border border-[#F8E197] rounded-3xl">
                 <img
-                  src="images/image7.jpg"
+                  src="images/image33.jpg"
                   alt="#_"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
@@ -85,7 +85,7 @@ export default function Section2() {
               </div>
               <div className="p-2 overflow-hidden border border-[#F8E197] rounded-3xl">
                 <img
-                  src="images/image15.jpg"
+                  src="images/image31.jpg"
                   alt="#_"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
