@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Body,
   Container,
@@ -13,10 +13,10 @@ import {
   Row,
   Section,
   Text,
-} from '@react-email/components'
+} from "@react-email/components";
 
 function getRandomNumberFromList() {
-  const numbers = [29, 25, 24, 26, 22];
+  const numbers = [29, 25, 26, 22, 35, 34];
   if (!Array.isArray(numbers) || numbers.length === 0) {
     throw new Error("La lista deve essere un array non vuoto.");
   }
@@ -68,12 +68,14 @@ export default function FWUGEmailTemplate() {
           `}
         </style>
       </Head>
-      <Preview>Welcome to the $FWUG Fam! Your journey to meme coin stardom begins!</Preview>
+      <Preview>
+        Welcome to the $FWUG Fam! Your journey to meme coin stardom begins!
+      </Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={logoContainer}>
             <Img
-              src="https://www.fwug.org/images/image7.jpg"
+              src="https://www.fwug.org/images/image30.jpg"
               width="600"
               height="300"
               alt="$FWUG Logo"
@@ -81,11 +83,11 @@ export default function FWUGEmailTemplate() {
             />
           </Section>
           <Heading style={h1}>Welcome to the $FWUG Fam!</Heading>
+          <Text style={text}>Ribbit ribbit, new $FWUG fam member! 🐸🎉</Text>
           <Text style={text}>
-            Ribbit ribbit, new $FWUG fam member! 🐸🎉
-          </Text>
-          <Text style={text}>
-            We're toadally excited to have you join our pond of meme coin enthusiasts. You've just taken your first hop into the wild world of $FWUG!
+            We're toadally excited to have you join our pond of meme coin
+            enthusiasts. You've just taken your first hop into the wild world of
+            $FWUG!
           </Text>
           <Section style={imageSection}>
             <Img
@@ -103,20 +105,35 @@ export default function FWUGEmailTemplate() {
             <li>Ribbeting updates on $FWUG's latest leaps and bounds</li>
             <li>Exclusive memes that'll make you croak with laughter</li>
             <li>Tips on how to make the most of your $FWUG investment</li>
-            <li>Invitations to virtual pond meetings with fellow $FWUG hodlers</li>
+            <li>
+              Invitations to virtual pond meetings with fellow $FWUG hodlers
+            </li>
           </ul>
           <Text style={text}>
-            Ready to dive deeper into the $FWUG pond? Hop on over to our trading platform and start your meme coin adventure!
+            Ready to dive deeper into the $FWUG pond? Hop on over to our trading
+            platform and start your meme coin adventure!
           </Text>
 
           <Section style={ctaSection}>
-            <Link href="https://pump.fun/5ENMsAru7reMkWJJd78cGThBtjVVKVbWJBhabrA8pump" style={button}>Start Trading $FWUG Now!</Link>
+            <Link
+              href="https://pump.fun/5ENMsAru7reMkWJJd78cGThBtjVVKVbWJBhabrA8pump"
+              style={button}
+            >
+              Start Trading $FWUG Now!
+            </Link>
           </Section>
           <Section style={ctaSection}>
-            <Link href="https://pump.fun/5ENMsAru7reMkWJJd78cGThBtjVVKVbWJBhabrA8pump" style={button}>Explore PumpFun</Link>
+            <Link
+              href="https://pump.fun/5ENMsAru7reMkWJJd78cGThBtjVVKVbWJBhabrA8pump"
+              style={button}
+            >
+              Explore PumpFun
+            </Link>
           </Section>
           <Section style={ctaSection}>
-            <Link href="https://t.me/therealfwug" style={button}>Join to Telegram</Link>
+            <Link href="https://t.me/therealfwug" style={button}>
+              Join to Telegram
+            </Link>
           </Section>
 
           <Text style={text}>
@@ -126,101 +143,96 @@ export default function FWUGEmailTemplate() {
           <Text style={footer}>
             © 2023 $FWUG Coin. All rights reserved.
             <br />
-           
           </Text>
         </Container>
       </Body>
     </Html>
-  )
+  );
 }
 
 const main = {
-  backgroundColor: 'black',
-  fontFamily: '"Bungee", "Chakra Petch", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif',
-}
+  backgroundColor: "black",
+  fontFamily:
+    '"Bungee", "Chakra Petch", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif',
+};
 
 const container = {
-  margin: '0 auto',
-  padding: '20px 0 48px',
-  width: '100%',
-  maxWidth: '580px',
-}
+  margin: "0 auto",
+  padding: "20px 0 48px",
+  width: "100%",
+  maxWidth: "580px",
+};
 
 const logoContainer = {
-  marginBottom: '24px',
-}
+  marginBottom: "24px",
+};
 
 const logo = {
-  margin: '0 auto',
-  borderRadius: '15px',
-  maxWidth: '100%',
-  height: 'auto',
-}
+  margin: "0 auto",
+  borderRadius: "15px",
+  maxWidth: "100%",
+  height: "auto",
+};
 
 const h1 = {
-  color: '#F8E197',
+  color: "#F8E197",
   fontFamily: '"Chakra Petch", sans-serif',
-  fontSize: '35px',
-  fontWeight: 'bold',
-  textAlign: 'center',
-  margin: '30px 0',
-}
+  fontSize: "35px",
+  fontWeight: "bold",
+  textAlign: "center",
+  margin: "30px 0",
+};
 
 const text = {
-  color: '#65B1E0',
+  color: "#65B1E0",
   fontFamily: '"Chakra Petch", sans-serif',
-  fontSize: '20px',
-  lineHeight: '26px',
-}
+  fontSize: "20px",
+  lineHeight: "26px",
+};
 
 const list = {
   ...text,
-  paddingLeft: '26px',
-}
+  paddingLeft: "26px",
+};
 
 const imageSection = {
-  marginBottom: '30px',
-}
+  marginBottom: "30px",
+};
 
 const memeImage = {
-  maxWidth: '100%',
-  height: 'auto',
-  borderRadius: '8px',
-  margin: '0 auto',
-}
+  maxWidth: "100%",
+  height: "auto",
+  borderRadius: "8px",
+  margin: "0 auto",
+};
 
 const ctaSection = {
-  textAlign: 'center',
-  marginTop: '32px',
-  marginBottom: '32px',
-}
+  textAlign: "center",
+  marginTop: "32px",
+  marginBottom: "32px",
+};
 
 const button = {
-  backgroundColor: '#F8E197',
-  borderRadius: '10px',
-  color: 'black',
+  backgroundColor: "#F8E197",
+  borderRadius: "10px",
+  color: "black",
   fontFamily: '"Chakra Petch", sans-serif',
-  fontSize: '20px',
-  textDecoration: 'none',
-  textAlign: 'center',
-  display: 'block',
-  width: '60%',
-  margin: '0 auto',
-  padding: '12px',
-}
+  fontSize: "20px",
+  textDecoration: "none",
+  textAlign: "center",
+  display: "block",
+  width: "60%",
+  margin: "0 auto",
+  padding: "12px",
+};
 
 const hr = {
-  borderColor: '#cccccc',
-  margin: '20px 0',
-}
+  borderColor: "#cccccc",
+  margin: "20px 0",
+};
 
 const footer = {
-  color: '#8898aa',
-  fontSize: '12px',
-  lineHeight: '16px',
-}
-
-const unsubscribeLink = {
-  color: '#8898aa',
-  textDecoration: 'underline',
-}
+  color: "#8898aa",
+  fontSize: "12px",
+  lineHeight: "16px",
+};

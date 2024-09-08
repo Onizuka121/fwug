@@ -7,12 +7,13 @@ export async function sendMail(email) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": process.env.API_KEY || "", // Assicurati che questa sia impostata nel server
+        "x-api-key": process.env.API_KEY || "",
       },
-      body: JSON.stringify({email}), // Corpo JSON con l'email
+      body: JSON.stringify({email}),
     });
   
     const result = await response.json()
+    
   
     return result;
     

@@ -29,7 +29,7 @@ export default function Header() {
             $FWUG
           </Link>
 
-          <div className="flex flex-row items-center ml-14 justify-between text-white">
+          <div className="flex flex-row items-center ml-14 justify-between text-[#F8E197]">
             <button
               className={`menu-icon ${
                 navOpen ? "open" : ""

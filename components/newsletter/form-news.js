@@ -2,12 +2,12 @@ import Form from "./form";
 
 export default function FormNewsLetter() {
   return (
-    <div className="px-4 py-6 mx-auto lg:px-12 xl:px-24 max-w-7xl mt-10 border border-[#F8E197] rounded-2xl">
+    <div className="px-4 w-5/6 py-6 mx-auto lg:px-12 xl:px-24 max-w-7xl mt-10 border border-[#F8E197] rounded-2xl">
       <div className="grid gap-5 md:grid-cols-2 md:gap-10 lg:gap-20">
         <div className="flex justify-center md:justify-end">
           <img
             className="w-full max-w-sm rounded-2xl"
-            src="images/image20.jpg"
+            src="images/image36.jpg"
             alt="fwug image newsletters"
           />
         </div>

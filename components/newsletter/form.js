@@ -28,8 +28,13 @@ export default function Form() {
     setIsLoading(true)
 
     try {
-      await sendMail(email)
-      setIsSuccessModalOpen(true)
+      const result = await sendMail(email)
+      if(result.error){
+        setError(result.error)
+      }
+      setIsSuccessModalOpen(!result.error)
+      
+      
     } catch (err) {
       setError(err.message)
     } finally {

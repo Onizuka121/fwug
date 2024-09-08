@@ -8,6 +8,7 @@ import Carousel from "../components/carousel";
 import ImageSwitcher from "../components/image-switcher";
 import TimeLine from "../components/time-line";
 import FormNewsLetter from "../components/newsletter/form-news";
+import VideoComponent from '../components/videoComponent'
 
 
 
@@ -136,8 +137,10 @@ export default function Home() {
         </div>
       </div>
       <Carousel />
+      <VideoComponent urlbase='sium.MP4'/>
       
       <TimeLine />
+
       <div className="m-auto animate-bounce justify-center w-64 shakeY-special">
         <div className="flex justify-center col-span-1 px-8 animate-bounce">
           <svg
@@ -200,7 +203,9 @@ export default function Home() {
           </svg>
         </div>
       </div>
+      <VideoComponent urlbase='richman.MP4'/>
       <Section2 />
+      <VideoComponent urlbase='trade.MP4'/>
       <div className="m-auto animate-bounce justify-center w-64 shakeY-special">
         <div className="flex justify-center col-span-1 px-8 animate-bounce">
           <svg
