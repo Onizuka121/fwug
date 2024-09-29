@@ -116,7 +116,7 @@ export default function FWUGEmailTemplate() {
 
           <Section style={ctaSection}>
             <Link
-              href="https://pump.fun/5ENMsAru7reMkWJJd78cGThBtjVVKVbWJBhabrA8pump"
+              href="https://dexscreener.com/solana/gW7cgKUtKtz791HvJYHrtATz8czafMYqLpAt2yaJ1dW"
               style={button}
             >
               Start Trading $FWUG Now!
@@ -124,10 +124,10 @@ export default function FWUGEmailTemplate() {
           </Section>
           <Section style={ctaSection}>
             <Link
-              href="https://pump.fun/5ENMsAru7reMkWJJd78cGThBtjVVKVbWJBhabrA8pump"
+              href="https://dexscreener.com/solana/gW7cgKUtKtz791HvJYHrtATz8czafMYqLpAt2yaJ1dW"
               style={button}
             >
-              Explore PumpFun
+              Explore Raydium
             </Link>
           </Section>
           <Section style={ctaSection}>

@@ -5,6 +5,41 @@
 @tailwind utilities;
 @import "flowbite";
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Sposta il contenuto completamente a sinistra */
+  }
+}
+
+
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: inline-flex; /* Usa inline-flex per evitare interruzioni di riga */
+  white-space: nowrap; /* Impedisce la rottura delle righe */
+  animation: marquee 40s linear infinite; /* Regola la durata per una transizione più fluida */
+}
+
+.text-shadow {
+  text-shadow: 7px 7px 1px rgb(10, 10, 10); /* Cambia i valori per modificare l'ombra */
+}
+
+.text-shadow-custom{
+  text-shadow: 4px 4px 1px rgb(10, 10, 10); /* Cambia i valori per modificare l'ombra */
+}
+
+.shadow-custom{
+
+  box-shadow: 7px 7px 1px rgb(10, 10, 10);;
+
+}
+
 .bg-custom{
   background-color: #F8E197;
 
@@ -43,6 +78,13 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.bungee-light {
+  font-family: "Bungee", sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+}
+
 
 .chakra-petch-light {
   font-family: "Chakra Petch", sans-serif;
@@ -227,11 +269,32 @@
 
 
 body {
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-attachment:fixed;
-  background-color:#1d4668;
-  
+  background-image: url('/images/image38.jpg');
+  backface-visibility: inherit;
+}
+
+
+.overlay {
+  position: fixed; /* Posizionamento fisso per coprire tutto */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f8e19773; /* Cambia il colore e l'opacità */
+  z-index: -1; /* Assicura che l'overlay sia dietro il contenuto */
+}
+
+.overlay-custom {
+  position: fixed; /* Posizionamento fisso per coprire tutto */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f8e197dc; /* Cambia il colore e l'opacità */
+  z-index: -1; /* Assicura che l'overlay sia dietro il contenuto */
 }
 
 @layer utilities {
@@ -257,15 +320,18 @@ body {
 }
 
 .line1 {
-  top: 6px;
+  top: 5px;
+  border: 2px solid;
 }
 
 .line2 {
-  top: 12px;
+  top: 11px;
+  border: 2px solid;
 }
 
 .line3 {
-  top: 18px;
+  top: 17px;
+  border: 2px solid;
 }
 
 .open .line1 {

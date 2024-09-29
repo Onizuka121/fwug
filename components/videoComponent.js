@@ -26,8 +26,14 @@ export default function VideoComponent({urlbase}) {
   }
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <div className="relative w-4/5 max-w-[400px] aspect-[9/16] bg-black rounded-lg overflow-hidden shadow-xl">
+    <div className="flex justify-center items-center ">
+      <div className="relative w-4/5 max-w-[400px] shadow-[0.40em_0.40em] 
+              cursor-pointer 
+              transition 
+              duration-150 
+              transform 
+              hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[0.60em_0.60em] 
+              active:translate-x-0 active:translate-y-0 active:shadow-[0.05em_0.05em] aspect-[9/16] bg-black border-4 border-black rounded-lg overflow-hidden">
         <video
           ref={videoRef}
           className="w-full h-full object-cover"
@@ -41,18 +47,18 @@ export default function VideoComponent({urlbase}) {
           <Button
             variant="ghost"
             size="icon"
-            className="text-white hover:bg-white/20"
+            className="text-[#4d8bb2] bg-[#F8E197]"
             onClick={togglePlay}
           >
-            {isPlaying ? <Pause className="h-6 w-6" /> : <Play className="h-6 w-6" />}
+            {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
           </Button>
           <Button
             variant="ghost"
             size="icon"
-            className="text-white hover:bg-white/20"
+            className="text-[#4d8bb2] bg-[#F8E197]"
             onClick={toggleMute}
           >
-            {isMuted ? <VolumeX className="h-6 w-6" /> : <Volume2 className="h-6 w-6" />}
+            {isMuted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
           </Button>
         </div>
       </div>

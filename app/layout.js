@@ -11,15 +11,27 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
-     
-      <body className="">
-        <Header/>
-        
-        <div className="backdrop-blur-[400px]">
+     <body>
+     <div className="relative">
+      {/* Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div className="overlay" /> {/* Questo sarà il tuo overlay */}
+      </div>
+
+      {/* Header */}
+      <Header />
+      
+      {/* Contenuto */}
+      <div className="relative z-10">
         {children}
-        </div>
-        <Footer/>
-      </body>
+      </div>
+      
+      {/* Footer */}
+      <Footer />
+    </div>
+
+     </body>
+     
      
     </html>
   );
