@@ -124,24 +124,7 @@ export default function Home() {
                 >
                   <span className="text-4xl text-[#65B1E0]">Buy now $FGUW</span>
                 </Link>
-                <Link
-                  href={`https://dexscreener.com/solana/gW7cgKUtKtz791HvJYHrtATz8czafMYqLpAt2yaJ1dW`}
-                  className={`bg-[#F8E197] 
-                    px-[1.3em] 
-                    py-[0.6em] 
-                    ${myFont.className}
-                    border-4 border-black 
-                    rounded-xl
-                    shadow-[0.40em_0.40em] 
-                    cursor-pointer 
-                    transition 
-                    duration-150 
-                    transform 
-                    hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[0.60em_0.60em] 
-                    active:translate-x-0 active:translate-y-0 active:shadow-[0.05em_0.05em]`}
-                >
-                  <span className="text-4xl text-[#65B1E0]">TRY OUR PFP</span>
-                </Link>
+               
               </div>
             </div>
           </div>
