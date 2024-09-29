@@ -39,7 +39,7 @@ export default function TimeLine() {
           }}>
             <div className="overlay-custom rounded-xl" />
             <div className="flex items-center justify-between mb-2">
-              <p className="text-3xl bungee font-bold text-shadow-custom text-[#65B1E0] leading-5">
+              <p className="text-3xl bungee font-bold text-shadow-custom text-[#65B1E0] leading-8">
                 Post-Launch Momentum
               </p>
               <p className="flex text-xl   p-4 items-center justify-center w-6 h-6 font-bold text-deep-purple-accent-400 rounded-xl border-4 border-black bg-[#65B1E0]">
@@ -78,7 +78,7 @@ export default function TimeLine() {
           }}>
               <div className="overlay-custom rounded-xl" />
             <div className="flex items-center justify-between mb-2">
-              <p className="text-3xl bungee font-bold text-shadow-custom text-[#65B1E0] leading-5">
+              <p className="text-3xl bungee font-bold text-shadow-custom text-[#65B1E0] leading-8">
                 Explosive Growth Phase
               </p>
               <p className="flex text-xl p-4 items-center justify-center w-6 h-6 font-bold text-deep-purple-accent-400 rounded-xl border-4 border-black bg-[#65B1E0]">
@@ -112,10 +112,10 @@ export default function TimeLine() {
           }}>
               <div className="overlay-custom rounded-xl" />
             <div className="flex items-center justify-between mb-2">
-              <p className="text-3xl bungee font-bold text-shadow-custom text-[#65B1E0] leading-5">
-                {" "}
-                Sustained Momentum
-              </p>
+            <p className="text-3xl bungee font-bold text-shadow-custom text-[#65B1E0] leading-8">
+    Sustained Momentum
+</p>
+
               <p className="flex text-xl p-4 items-center justify-center w-6 h-6 font-bold  text-deep-purple-accent-400 rounded-xl border-4 border-black bg-[#65B1E0]">
                 3
               </p>
@@ -148,7 +148,7 @@ export default function TimeLine() {
           }}>
               <div className="overlay-custom rounded-xl" />
             <div className="flex items-center justify-between mb-2">
-              <p className="text-3xl bungee font-bold text-shadow-custom text-[#65B1E0] leading-5">
+              <p className="text-3xl bungee font-bold text-shadow-custom text-[#65B1E0] leading-8">
                 Future Plans
               </p>
               <p className="flex text-xl p-4 items-center justify-center w-6 h-6 font-bold  text-deep-purple-accent-400 rounded-xl border-4 border-black bg-[#65B1E0]">
