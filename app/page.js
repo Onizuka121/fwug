@@ -105,7 +105,7 @@ export default function Home() {
               >
                 The Real FWUG
               </h1>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 animate-on-scroll justify-center flex-col items-center gap-3 mt-10 md:flex-row">
+              <div className="flex animate-on-scroll justify-center  gap-3 mt-10">
                 <Link
                   href={`https://dexscreener.com/solana/gW7cgKUtKtz791HvJYHrtATz8czafMYqLpAt2yaJ1dW`}
                   className={`bg-[#F8E197] 
@@ -113,7 +113,7 @@ export default function Home() {
                     py-[0.6em] 
                     ${myFont.className}
                     border-4 border-black 
-                    rounded-xl
+                    rounded-xl 
                     shadow-[0.40em_0.40em] 
                     cursor-pointer 
                     transition 
