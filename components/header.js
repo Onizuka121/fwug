@@ -33,9 +33,9 @@ export default function Header() {
         </div>
 
         <nav className="items-center flex-grow hidden gap-10 drop-shadow-xl shadow-black p-4 px-5 md:px-0 md:pb-0 md:flex justify-end md:flex-row lg:p-0 md:mt-0">
-          <NavLink href="subscribe">Subscribe</NavLink>
+          <NavLink href="https://www.instagram.com/therealfwug?igsh=c2w5bHV6dzFyZTM2" isLink={true}>Instagram</NavLink>
           <NavLink href="roadmap">Roadmap</NavLink>
-          <NavLink href="raydium">Raydium</NavLink>
+          <NavLink href="https://www.tiktok.com/@therealfwug?_t=8qLxd9Hr6E1&_r=1" isLink={true}>TikTok</NavLink>
           <NavLink href="telegram">Telegram</NavLink>
         </nav>
       </div>
@@ -44,10 +44,10 @@ export default function Header() {
           <li>
             <a
               className="text-[#65B1E0] text-2xl p-3 transition rounded-xl"
-              href="#subscribe"
+              href="https://www.instagram.com/therealfwug?igsh=c2w5bHV6dzFyZTM2"
               onClick={() => setNavOpen(!navOpen)}
             >
-              Subscribe
+              Instagram
             </a>
           </li>
           <li>
@@ -62,10 +62,10 @@ export default function Header() {
           <li>
             <a
               className="text-[#65B1E0] text-2xl p-3 transition rounded-xl"
-              href="#raydium"
+              href="https://www.tiktok.com/@therealfwug?_t=8qLxd9Hr6E1&_r=1"
               onClick={() => setNavOpen(!navOpen)}
             >
-              Raydium
+              TikTok
             </a>
           </li>
           <li>

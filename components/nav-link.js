@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function NavLink({ href, children }) {
+export default function NavLink({ href, children , isLink=false }) {
 
     return (
     <Link
@@ -9,7 +9,7 @@ export default function NavLink({ href, children }) {
       } ${
         href === "features" ? " md:ml-40" : " "
       }`}
-      href={`#${href}`}
+      href={`${isLink ? href : "#"+href}`}
     >
       {children}
     </Link>
