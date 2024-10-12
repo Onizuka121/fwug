@@ -26,7 +26,7 @@ export default function Section2() {
   return (
     <div className="container mx-auto px-4 py-8 mt-20">
       <h2 className={`${myFont.className} text-center p-10 mb-6  text-5xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl   text-shadow  leading-none tracking-tight text-[#65B1E0] md:mx-auto`}>
-            $FWUG GALLEY MEME
+            $FWUG GALLERY MEME
           </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {memes.map((meme) => (

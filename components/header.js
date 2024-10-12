@@ -16,7 +16,7 @@ export default function Header() {
       <div className="flex w-full px-8 mx-auto md:px-12 md:items-center md:justify-between flex-row lg:px-32 max-w-7xl">
         <Link
           href="/"
-          className={`${myFont.className} mr-10 shakeX text-shadow text-[#65B1E0] text-5xl`}
+          className={`${myFont.className} mr-10 shakeX text-shadow text-[#65B1E0] text-4xl `}
         >
           $FWUG
         </Link>
@@ -33,14 +33,25 @@ export default function Header() {
         </div>
 
         <nav className="items-center flex-grow hidden gap-10 drop-shadow-xl shadow-black p-4 px-5 md:px-0 md:pb-0 md:flex justify-end md:flex-row lg:p-0 md:mt-0">
+        <NavLink href="roadmap">Roadmap</NavLink>
           <NavLink href="https://www.instagram.com/therealfwug?igsh=c2w5bHV6dzFyZTM2" isLink={true}>Instagram</NavLink>
-          <NavLink href="roadmap">Roadmap</NavLink>
+         
           <NavLink href="https://www.tiktok.com/@therealfwug?_t=8qLxd9Hr6E1&_r=1" isLink={true}>TikTok</NavLink>
           <NavLink href="telegram">Telegram</NavLink>
+          <NavLink href="https://x.com/realfwug" isLink={true}>Twitter-X</NavLink>
         </nav>
       </div>
       <div className={`md:hidden py-7 ${navOpen ? "block" : "hidden"}`}>
         <ul className="flex flex-col items-center justify-start gap-10 text-xl">
+        <li>
+            <a
+              className="text-[#65B1E0] text-2xl p-3 transition rounded-xl"
+              href="#roadmap"
+              onClick={() => setNavOpen(!navOpen)}
+            >
+              Roadmap
+            </a>
+          </li>
           <li>
             <a
               className="text-[#65B1E0] text-2xl p-3 transition rounded-xl"
@@ -50,15 +61,7 @@ export default function Header() {
               Instagram
             </a>
           </li>
-          <li>
-            <a
-              className="text-[#65B1E0] text-2xl p-3 transition rounded-xl"
-              href="#roadmap"
-              onClick={() => setNavOpen(!navOpen)}
-            >
-              Roadmap
-            </a>
-          </li>
+         
           <li>
             <a
               className="text-[#65B1E0] text-2xl p-3 transition rounded-xl"
@@ -75,6 +78,15 @@ export default function Header() {
               onClick={() => setNavOpen(!navOpen)}
             >
               Telegram
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-[#65B1E0] text-2xl p-3 transition rounded-xl"
+              href="https://x.com/realfwug"
+              onClick={() => setNavOpen(!navOpen)}
+            >
+              Twitter-X
             </a>
           </li>
         </ul>

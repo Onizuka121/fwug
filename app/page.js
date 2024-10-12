@@ -14,6 +14,7 @@ import { useState, useEffect, Suspense } from "react";
 import { usePathname } from "next/navigation";
 import ComponentCarousel from "../components/carousel";
 import { myFont } from "../components/ui/span";
+import Image from "next/image";
 
 import BankFwug3D from "../components/ui/bank";
 
@@ -88,47 +89,44 @@ export default function Home() {
      
 
       <section>
-        <div
-          className="px-8 py-24 mx-auto md:px-12 lg:px-32  flex flex-col justify-end h-[700px] mt-28 rounded-3xl bg-[#F8E197] border-4 border-black xl:max-w-[70%] max-w-[95%]"
-          style={{
-            backgroundImage: `url('/images/image60.jpg')`,
-            backgroundSize: "cover", // Copre l'intero div
-            backgroundPosition: "center", // Posiziona l'immagine al centro
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          {/* Contenitore principale per centrare il contenuto */}
-          <div className="flex flex-col items-center gap-6 lg:grid-cols-2 lg:gap-24 ">
-            <div className="md:order-first text-center">
-              <h1
-                className={`${myFont.className} text-8xl text-shadow  tracking-tighter text-[#F8E197] text-balance`}
+      <div className="mx-auto mt-28 xl:max-w-[70%] max-w-[95%]">
+      <div className="relative w-full h-0 pb-[100%] sm:pb-[75%] md:pb-[56.25%] rounded-3xl border-4 border-black overflow-hidden">
+        <Image
+          src="/images/image60.jpg"
+          alt="Background image"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="70% center"
+          className="absolute inset-0"
+        />
+        <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12 lg:p-16">
+          <div className="flex flex-col items-center gap-6">
+            <h1 className={`${myFont.className} custom-text-size text-shadow tracking-tighter text-[#F8E197] text-balance text-center`}>
+              The Real FWUG
+            </h1>
+            <div className="flex justify-center gap-3 mt-6 md:mt-10">
+              <Link
+                href={`https://dexscreener.com/solana/gW7cgKUtKtz791HvJYHrtATz8czafMYqLpAt2yaJ1dW`}
+                className={`bg-[#F8E197] 
+                  px-4 py-2 md:px-[1.3em] md:py-[0.6em] 
+                  ${myFont.className}
+                  border-4 border-black 
+                  rounded-xl 
+                  shadow-[0.25em_0.25em] md:shadow-[0.40em_0.40em] 
+                  cursor-pointer 
+                  transition 
+                  duration-150 
+                  transform 
+                  hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[0.40em_0.40em] md:hover:shadow-[0.60em_0.60em] 
+                  active:translate-x-0 active:translate-y-0 active:shadow-[0.05em_0.05em]`}
               >
-                The Real FWUG
-              </h1>
-              <div className="flex animate-on-scroll justify-center  gap-3 mt-10">
-                <Link
-                  href={`https://dexscreener.com/solana/gW7cgKUtKtz791HvJYHrtATz8czafMYqLpAt2yaJ1dW`}
-                  className={`bg-[#F8E197] 
-                    px-[1.3em] 
-                    py-[0.6em] 
-                    ${myFont.className}
-                    border-4 border-black 
-                    rounded-xl 
-                    shadow-[0.40em_0.40em] 
-                    cursor-pointer 
-                    transition 
-                    duration-150 
-                    transform 
-                    hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[0.60em_0.60em] 
-                    active:translate-x-0 active:translate-y-0 active:shadow-[0.05em_0.05em]`}
-                >
-                  <span className="text-4xl text-[#65B1E0]">Buy now $FGUW</span>
-                </Link>
-               
-              </div>
+                <span className="text-2xl md:text-4xl text-[#65B1E0]">Buy now $FWUG</span>
+              </Link>
             </div>
           </div>
         </div>
+      </div>
+    </div>
       </section>
       <Suspense fallback={<Loader />}>
         <BannerMarquee banners={banners} />

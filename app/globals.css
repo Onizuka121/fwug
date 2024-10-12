@@ -265,6 +265,22 @@
 }
 
 
+.custom-text-size {
+  font-size: 3rem; /* 4xl - 36px */
+}
+
+@media (min-width: 768px) {
+  .custom-text-size {
+    font-size: 3.75rem; /* 6xl - 60px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-text-size {
+    font-size: 6rem; /* 8xl - 96px */
+  }
+}
+
 
 
 
