@@ -38,7 +38,7 @@ export default function Header() {
          
           <NavLink href="https://www.tiktok.com/@therealfwug?_t=8qLxd9Hr6E1&_r=1" isLink={true}>TikTok</NavLink>
           <NavLink href="telegram">Telegram</NavLink>
-          <NavLink href="https://x.com/realfwug" isLink={true}>Twitter-X</NavLink>
+          <NavLink href="https://x.com/realfwug" isLink={true}>Twitter/X</NavLink>
         </nav>
       </div>
       <div className={`md:hidden py-7 ${navOpen ? "block" : "hidden"}`}>
